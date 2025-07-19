@@ -7,20 +7,40 @@ import java.util.*;
     System.out.println("Enter the number of monkeys");
     int n = sc.nextInt(); // number of monkeys
 
-    System.out.println("Enter the number of monkeys");
-    int k = sc.nextInt(); //total number of bananas
+    System.out.println("Enter the total number of bananas");
+    int x = sc.nextInt(); //total number of bananas
 
-    System.out.println("Enter the number of monkeys");
-    int j = sc.nextInt(); // ttotal number of peanuts
+    System.out.println("Enter the total number of peanuts");
+    int y = sc.nextInt(); // ttotal number of peanuts
 
-    System.out.println("Enter the number of monkeys");
-    int m = sc.nextInt(); // capacity of bananas
+    System.out.println("Banana capacity of monkeys");
+    int b = sc.nextInt(); // capacity of bananas
 
-    System.out.println("Enter the number of monkeys");
+    System.out.println("Peanut capacity of monkeys");
     int p = sc.nextInt(); // capacity of peanuts
 
-    
+
     sc.close();
+    while(n>0 && (x>b || y>p))
+    {
+        if(x>b)
+        {
+            x = x-b;
+            // y = y-p;
+            n--;
+        }
+        else if(y>p)
+        {
+            y = y-p;
+            n--;
+        }
+        
+    }
+    x = 0;
+    y=0;
+// y = y-p;
+    n--;
+    System.out.println("Remaining monkeys = "+n);
 }
 }
 // Day 2 Slot 2 Question 2
