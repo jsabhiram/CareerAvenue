@@ -20,7 +20,7 @@ public class q2_ch {
             num++;
         }
     }
-    public void core(int n) {if(n==0){System.out.println("Invalid input");}if(n%2==0){System.out.println(fib(n));}else{System.out.println(cal_prime(n));}}
+    public void core(int n) {if(n==0){System.out.println("Invalid input");}if(n%2==0){System.out.println(fib(n/2));}else{System.out.println(cal_prime(n/2));}}
 
     // Helper function to check if a number is prime
     private boolean isPrime(int num) {
